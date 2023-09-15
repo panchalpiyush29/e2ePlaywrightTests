@@ -9,3 +9,4 @@ end to end Playwright Tests
 * script is defined under package.json as smoke test
 * npm run smoke
 * npx playwright test --grep @login
+* npx playwright test
