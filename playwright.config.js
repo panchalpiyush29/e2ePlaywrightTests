@@ -6,12 +6,12 @@ dotenv.config({path: `.env.test`})
 
 module.exports = defineConfig({
     testDir: './tests',
-    fullyParallel: true,
-    //forbidOnly: !!process.env.CI,
-    //retries: process.env.CI ? 2 : 0,
-    //workers: process.env.CI ? 1 : undefined,
-    workers: 5,
-    retries: 1,
+    fullyParallel: false,
+    forbidOnly: !!process.env.CI,
+    retries: process.env.CI ? 2 : 0,
+    workers: process.env.CI ? 1 : undefined,
+    //workers: 1,
+    //retries: 1,
     reporter: 'html',
 
     use: {
