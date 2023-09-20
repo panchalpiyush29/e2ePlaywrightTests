@@ -3,13 +3,13 @@ import {LoginPage} from "../page/LoginPage";
 import {DashboardPage} from "../page/DashboardPage";
 
 const credentials = JSON.parse(JSON.stringify(require("../test_data/login-credentials.json")));
-test.describe('Feature : sauce demo login tests', () => {
+test.describe('Feature : sauce demo login tests @login', () => {
 
     test.beforeEach(async ({page}) => {
         await page.goto('/')
     })
 
-    test('Scenario : login with valid credentials @login', async ({page}) => {
+    test('Scenario : login with valid credentials', async ({page}) => {
         const loginPage = new LoginPage(page);
         const dashboardPage = new DashboardPage(page);
 
@@ -22,7 +22,7 @@ test.describe('Feature : sauce demo login tests', () => {
         })
     })
 
-    test('Scenario : login with invalid credentials @login', async ({page}) => {
+    test('Scenario : login with invalid credentials', async ({page}) => {
         const loginPage = new LoginPage(page);
         const dashboardPage = new DashboardPage(page);
 
@@ -34,7 +34,4 @@ test.describe('Feature : sauce demo login tests', () => {
             await dashboardPage.verifySignInErrMsg();
         })
     })
-
 })
-
-

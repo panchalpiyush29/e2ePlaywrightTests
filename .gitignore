@@ -2,3 +2,7 @@ node_modules/
 /test-results/
 /playwright-report/
 /playwright/.cache/
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/e2ePlaywrightTets.iml
