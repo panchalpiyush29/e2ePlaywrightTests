@@ -15,7 +15,7 @@ module.exports = defineConfig({
     reporter: 'html',
 
     use: {
-        browserName: 'firefox',
+        browserName: 'chromium',
         viewport: {width: 1980, height: 1080},
         headless: true,
         screenshot: 'only-on-failure',
