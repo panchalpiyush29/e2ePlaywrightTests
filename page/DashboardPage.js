@@ -3,7 +3,7 @@ import {expect} from "@playwright/test";
 class DashboardPage {
     constructor(page) {
         this.page = page;
-        this.errMsg = "Username and password do not match any user in this service";
+        this.errMsg = "My name is Piyush";
     }
 
     async verifyShoppingCartIcon() {
