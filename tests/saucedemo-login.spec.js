@@ -30,7 +30,7 @@ test.describe('Feature : sauce demo login tests @login', () => {
             await loginPage.performLogin(credentials.username, "password");
         })
 
-        await test.step('verify shopping cart icon is displayed', async () => {
+        await test.step('verify shopping cart icon is not displayed', async () => {
             await dashboardPage.verifySignInErrMsg();
         })
     })
