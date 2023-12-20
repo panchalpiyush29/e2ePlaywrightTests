@@ -3,7 +3,7 @@ import {LoginPage} from "../page/LoginPage";
 import {DashboardPage} from "../page/DashboardPage";
 
 const credentials = JSON.parse(JSON.stringify(require("../test_data/login-credentials.json")));
-test.describe('Feature : sauce demo login tests @login', () => {
+test.describe('Feature : sauce demo login tests @login @smoke', () => {
 
     test.beforeEach(async ({page}) => {
         await page.goto('/')

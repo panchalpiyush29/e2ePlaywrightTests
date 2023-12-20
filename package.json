@@ -4,7 +4,7 @@
   "description": "end to end Playwright Tests",
   "main": "index.js",
   "scripts": {
-    "smoke": "npx playwright test --grep @login",
+    "smoke": "npx playwright test --grep @smoke",
     "api-test": "npx playwright test --grep @api-test"
   },
   "keywords": [],
