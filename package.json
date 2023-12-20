@@ -4,13 +4,14 @@
   "description": "end to end Playwright Tests",
   "main": "index.js",
   "scripts": {
-    "smoke": "npx playwright test --grep @login"
+    "smoke": "npx playwright test --grep @login",
+    "api-test": "npx playwright test --grep @api-test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.39.0",
+    "@playwright/test": "^1.40.0",
     "@types/node": "^20.6.0"
   },
   "dependencies": {
